@@ -1,6 +1,8 @@
+#from django.contrib.auth.decorators import login_required
 from django.shortcuts import render,redirect
 from .models import Food,Consume
 
+#@login_required
 def index(request):
 
     if request.method == "POST":
